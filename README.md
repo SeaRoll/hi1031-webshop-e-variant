@@ -3,4 +3,5 @@ En variant som inte är lika extravagant, men uppnår till E. Dto är det enda s
  
 UML:
 
-<img width="746" alt="Screenshot 2022-10-12 at 15 43 39" src="https://user-images.githubusercontent.com/26680151/195359123-3ce0b210-15c0-4ad9-9334-ac3a6b3ca354.png">
+![package drawio](https://user-images.githubusercontent.com/26680151/195417723-e0c1d9ff-529f-4b2c-b992-cc120b92adad.png)
+
