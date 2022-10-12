@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.example.hi1031webshopevariant.business</OriginalElement>
+  <nodes>
+    <node x="350.0" y="-141.5">com.example.hi1031webshopevariant.business.UserHandler</node>
+    <node x="653.5" y="-510.5">com.example.hi1031webshopevariant.database.ItemDB</node>
+    <node x="741.5" y="-957.0">com.example.hi1031webshopevariant.business.Item</node>
+    <node x="47.0" y="-935.0">com.example.hi1031webshopevariant.business.User</node>
+    <node x="45.0" y="-510.5">com.example.hi1031webshopevariant.database.UserDB</node>
+    <node x="434.0" y="-533.0">com.example.hi1031webshopevariant.ui.UserDto</node>
+    <node x="890.0" y="-142.0">com.example.hi1031webshopevariant.business.ItemHandler</node>
+    <node x="972.0" y="-566.0">com.example.hi1031webshopevariant.ui.ItemDto</node>
+    <node x="273.0" y="-935.0">com.example.hi1031webshopevariant.database.DBManager</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.hi1031webshopevariant.database.UserDB" target="com.example.hi1031webshopevariant.business.User" relationship="CREATE">
+      <point x="-120.0" y="-50.5" />
+      <point x="100.0" y="-560.0" />
+      <point x="140.0" y="-560.0" />
+      <point x="0.0" y="95.0" />
+    </edge>
+    <edge source="com.example.hi1031webshopevariant.database.ItemDB" target="com.example.hi1031webshopevariant.business.Item" relationship="CREATE">
+      <point x="0.0" y="-50.5" />
+      <point x="-80.0" y="117.0" />
+    </edge>
+    <edge source="com.example.hi1031webshopevariant.business.ItemHandler" target="com.example.hi1031webshopevariant.business.Item" relationship="DEPENDENCY">
+      <point x="-40.0" y="-62.0" />
+      <point x="80.0" y="117.0" />
+    </edge>
+    <edge source="com.example.hi1031webshopevariant.database.ItemDB" target="com.example.hi1031webshopevariant.business.Item" relationship="GENERALIZATION">
+      <point x="80.0" y="-50.5" />
+      <point x="0.0" y="117.0" />
+    </edge>
+    <edge source="com.example.hi1031webshopevariant.database.ItemDB" target="com.example.hi1031webshopevariant.database.DBManager" relationship="DEPENDENCY">
+      <point x="-80.0" y="-50.5" />
+      <point x="700.0" y="-660.0" />
+      <point x="360.0" y="-660.0" />
+      <point x="0.0" y="95.0" />
+    </edge>
+    <edge source="com.example.hi1031webshopevariant.business.UserHandler" target="com.example.hi1031webshopevariant.business.User" relationship="DEPENDENCY">
+      <point x="-53.333333333333314" y="-61.5" />
+      <point x="406.6666666666667" y="-180.0" />
+      <point x="220.0" y="-180.0" />
+      <point x="220.0" y="-240.0" />
+      <point x="20.0" y="-240.0" />
+      <point x="20.0" y="-660.0" />
+      <point x="80.0" y="-660.0" />
+      <point x="-60.0" y="95.0" />
+    </edge>
+    <edge source="com.example.hi1031webshopevariant.business.ItemHandler" target="com.example.hi1031webshopevariant.database.ItemDB" relationship="DEPENDENCY">
+      <point x="-40.0" y="-62.0" />
+      <point x="940.0" y="-240.0" />
+      <point x="780.0" y="-240.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="com.example.hi1031webshopevariant.business.UserHandler" target="com.example.hi1031webshopevariant.database.UserDB" relationship="DEPENDENCY">
+      <point x="-53.333333333333314" y="-61.5" />
+      <point x="406.6666666666667" y="-180.0" />
+      <point x="220.0" y="-180.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="com.example.hi1031webshopevariant.database.UserDB" target="com.example.hi1031webshopevariant.database.DBManager" relationship="DEPENDENCY">
+      <point x="140.0" y="-50.5" />
+      <point x="0.0" y="95.0" />
+    </edge>
+    <edge source="com.example.hi1031webshopevariant.database.UserDB" target="com.example.hi1031webshopevariant.business.User" relationship="GENERALIZATION">
+      <point x="0.0" y="-50.5" />
+      <point x="80.0" y="95.0" />
+    </edge>
+    <edge source="com.example.hi1031webshopevariant.business.ItemHandler" target="com.example.hi1031webshopevariant.ui.ItemDto" relationship="CREATE">
+      <point x="40.0" y="-62.0" />
+      <point x="-80.0" y="106.0" />
+    </edge>
+    <edge source="com.example.hi1031webshopevariant.business.UserHandler" target="com.example.hi1031webshopevariant.ui.UserDto" relationship="CREATE">
+      <point x="60.0" y="-61.5" />
+      <point x="0.0" y="73.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.6984068627450981" showDependencies="true" x="711.7819066561699" y="-485.56575131773" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
