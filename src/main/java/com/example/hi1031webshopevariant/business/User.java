@@ -1,11 +1,21 @@
 package com.example.hi1031webshopevariant.business;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-@Data
-@AllArgsConstructor
+@Getter
+@Setter
+@ToString
+@EqualsAndHashCode
 public class User {
-  private String username;
-  private String password;
+  @Getter @Setter private String username;
+
+  @Getter @Setter private String password;
+
+  protected User(String username, String password) {
+    this.username = username;
+    this.password = password;
+  }
 }

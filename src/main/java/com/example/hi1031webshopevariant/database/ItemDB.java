@@ -9,7 +9,7 @@ import java.util.Vector;
 
 public class ItemDB extends Item {
 
-  public ItemDB(Integer id, String name, Integer price, String description) {
+  private ItemDB(Integer id, String name, Integer price, String description) {
     super(id, name, price, description);
   }
 
@@ -27,7 +27,7 @@ public class ItemDB extends Item {
         String name = rs.getString("item_name");
         Integer price = rs.getInt("item_price");
         String description = rs.getString("item_description");
-        return Optional.of(new Item(itemId, name, price, description));
+        return Optional.of(new ItemDB(itemId, name, price, description));
       }
     } catch (SQLException e) {
       throw new RuntimeException(e);
@@ -50,7 +50,7 @@ public class ItemDB extends Item {
         String name = rs.getString("item_name");
         Integer price = rs.getInt("item_price");
         String description = rs.getString("item_description");
-        v.addElement(new Item(id, name, price, description));
+        v.addElement(new ItemDB(id, name, price, description));
       }
     } catch (SQLException e) {
       throw new RuntimeException(e);

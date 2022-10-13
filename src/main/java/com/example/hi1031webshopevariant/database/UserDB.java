@@ -10,7 +10,7 @@ import java.util.Optional;
 
 public class UserDB extends User {
 
-  public UserDB(String username, String password) {
+  private UserDB(String username, String password) {
     super(username, password);
   }
 
@@ -29,7 +29,7 @@ public class UserDB extends User {
       if (rs.next()) {
         String foundUsername = rs.getString("user_username");
         String foundPassword = rs.getString("user_password");
-        return Optional.of(new User(foundUsername, foundPassword));
+        return Optional.of(new UserDB(foundUsername, foundPassword));
       }
     } catch (SQLException e) {
       throw new RuntimeException(e);
